@@ -1,0 +1,24 @@
+{
+  "status": 2,
+  "alpha": 0.7,
+  "lambda_cost": 10.0,
+  "beta_switch": 0.02,
+  "objective": 167.14545265297906,
+  "expected_error_count": 161.07681578165332,
+  "expected_api_usd": 0.47033035379924193,
+  "allocation_L1_change": 68.26666666666667,
+  "expected_accuracy": 0.7731312453779531,
+  "heldout_expected_accuracy": 0.7535211267605635,
+  "heldout_expected_api_usd": 0.4685399999999958,
+  "heldout_max_excess_over_mean_budget_usd": 0.0,
+  "total_demand": 710.0,
+  "variables": 120,
+  "constraints": 112,
+  "checks": {
+    "max_demand_residual": 0.0,
+    "max_calibration_budget_violation_usd": 0.0,
+    "min_allocation": 0.0,
+    "objective_reconstruction_gap": 1.1368683772161603e-13,
+    "independent_HiGHS_objective": 167.14545265297915
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "Gurobi_and_HiGHS_agree": true,
+  "uniform_feasible_objective": 273.3218943260724,
+  "optimal_no_worse_than_uniform": true,
+  "zero_budget_detected_infeasible": true,
+  "train_heldout_disjoint": true,
+  "raw_source_sha256": "ba4f77f19517610a707c374e99322d7750c30fc4ae7ff5527888595a1e65d36d"
+}
