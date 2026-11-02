@@ -1,2 +1,6 @@
-PASS: accuracy optimum, binding budgets, price tradeoff, infeasibility; 3 HiGHS cross-checks.
-PASS: unequal-period demand and correctly weighted switching penalty.
+PASS: total budget - accuracy optimum, binding budget + shadow price, price tradeoff, infeasibility; HiGHS cross-checks.
+PASS: M3 per-model budget.
+PASS: share-based switching does not penalize demand growth (M3 volume version does).
+PASS: share-based switching penalty - beta threshold .5 reproduced (objective 5 / 7 / 10).
+PASS: baseline volume penalty and L1 versus minimum redistribution semantics.
+PASS: actual-data budget bracket (.030 infeasible, .034/.035 feasible).

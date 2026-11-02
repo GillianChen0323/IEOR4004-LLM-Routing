@@ -1,6 +1,6 @@
-Tested on macOS, Python 3.12.14
+Final audited release tested on macOS, Python 3.12.14.
 numpy 2.3.5
 pandas 2.2.3
 scipy 1.18.1
 gurobipy 13.0.3
-Gurobi restricted non-production license; license/key not included.
+Gurobi restricted non-production license; no license or API key included.
