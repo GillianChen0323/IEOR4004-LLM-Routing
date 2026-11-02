@@ -1,0 +1,49 @@
+DATA AND BENCHMARK REFERENCES
+Verified: 2 November 2026
+
+DIRECT DATA SOURCE USED IN THIS PROJECT
+[1] Hu, Qitian Jason; Bieker, Jacob; Li, Xiuyu; Jiang, Nan; Keigwin, Benjamin;
+Ranganath, Gaurav; Keutzer, Kurt; and Upadhyay, Shriyash Kaustubh. (2024).
+RouterBench: A Benchmark for Multi-LLM Routing System. arXiv:2403.12031.
+https://arxiv.org/abs/2403.12031
+Official project: https://github.com/withmartian/routerbench
+Dataset publisher: Martian (Hugging Face account withmartian).
+Dataset page: https://huggingface.co/datasets/withmartian/routerbench
+Dataset DOI: https://doi.org/10.57967/hf/1996
+Exact file: routerbench_0shot.pkl (not the 5-shot file).
+Download: https://huggingface.co/datasets/withmartian/routerbench/resolve/main/routerbench_0shot.pkl
+File version is pinned by SHA-256 in data/provenance.json. The download URL's main branch can change;
+rebuild_data.py rejects a different source hash. Retrieval date: 2 November 2026.
+
+UNDERLYING BENCHMARKS (ATTRIBUTION; NOT SEPARATE SOURCES OF OUR MODEL COSTS)
+[2] Hendrycks, Dan; Burns, Collin; Basart, Steven; Zou, Andy; Mazeika, Mantas;
+Song, Dawn; and Steinhardt, Jacob. Measuring Massive Multitask Language Understanding.
+ICLR 2021; arXiv preprint initially published 2020. https://arxiv.org/abs/2009.03300
+Used RouterBench subsets: mmlu-elementary-mathematics (378), mmlu-formal-logic (126),
+and mmlu-logical-fallacies (163).
+
+[3] Austin, Jacob; Odena, Augustus; Nye, Maxwell; Bosma, Maarten; Michalewski, Henryk;
+Dohan, David; Jiang, Ellen; Cai, Carrie; Terry, Michael; Le, Quoc; and Sutton, Charles.
+(2021). Program Synthesis with Large Language Models. arXiv:2108.07732.
+https://arxiv.org/abs/2108.07732
+Benchmark: Mostly Basic Programming Problems (MBPP). RouterBench mbpp subset: 427 rows,
+425 after exact-prompt deduplication. This is not the full original MBPP dataset.
+
+[4] Sakaguchi, Keisuke; Le Bras, Ronan; Bhagavatula, Chandra; and Choi, Yejin.
+(2019). WinoGrande: An Adversarial Winograd Schema Challenge at Scale.
+arXiv:1907.10641. https://arxiv.org/abs/1907.10641
+Used RouterBench winogrande subset: 1,267 rows, not the full original WinoGrande dataset.
+
+DERIVED DATASET AND LIMITS
+Our CSV is a source-derived subset, not a newly collected benchmark and not the full RouterBench.
+All three models' historical evaluation scores and costs come from RouterBench, on matching rows.
+Source: 36,497 rows -> selected benchmarks: 2,361 -> exact-prompt deduplication: 2,359.
+Columns: sample_id, eval_name, category, three score columns, three |total_cost columns.
+Model pool: gpt-3.5-turbo-1106, gpt-4-1106-preview, mistralai/mixtral-8x7b-chat.
+No new LLM calls were made. Historical costs are not today's API price quotes.
+M3 categories are retained; the M4 benchmark mapping is explicit and is not a claim that M3
+specified those exact benchmark names. Reasoning = formal logic + logical fallacies.
+Calibration/heldout split: 1,649 / 710, seed 4004; five paired bootstrap scenarios use only calibration.
+Source and derived CSV hashes are in data/provenance.json; the split manifest is in results/.
+No source license or permission is invented here; consult the source pages and underlying datasets
+before broader redistribution. This package provides attribution and a compact research subset.
