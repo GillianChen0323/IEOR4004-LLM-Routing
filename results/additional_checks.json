@@ -5,7 +5,7 @@
     "gpt-4-1106-preview": 0.7633802816901408,
     "mistralai/mixtral-8x7b-chat": 0.5352112676056338
   },
-  "heldout_routed_expected_score": 0.7535211267605635,
-  "quality_gap_to_oracle": 0.11690140845070407,
+  "heldout_routed_expected_score": 0.7467785843681709,
+  "quality_gap_to_oracle": 0.12364395084309665,
   "oracle_note": "Hindsight per-question maximum score, ignoring budget/cost/switching. Quality upper bound only, not operational-objective regret."
 }

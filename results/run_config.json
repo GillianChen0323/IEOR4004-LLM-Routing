@@ -2,14 +2,17 @@
   "seed": 4004,
   "calibration_fraction": 0.7,
   "scenarios": 5,
-  "alpha": 0.7,
+  "alpha": 0.3,
   "lambda_cost": 10.0,
-  "beta_switch": 0.02,
+  "beta_switch": 0.1,
   "periods": 4,
   "coding_period2_share": 0.45,
   "models": [
     "gpt-3.5-turbo-1106",
     "gpt-4-1106-preview",
     "mistralai/mixtral-8x7b-chat"
-  ]
+  ],
+  "budget_mode": "total",
+  "switch_mode": "share",
+  "reference_model": "gpt-4-1106-preview"
 }
