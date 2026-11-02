@@ -1,0 +1,35 @@
+{
+  "source": "https://huggingface.co/datasets/withmartian/routerbench/resolve/main/routerbench_0shot.pkl",
+  "raw_sha256": "ba4f77f19517610a707c374e99322d7750c30fc4ae7ff5527888595a1e65d36d",
+  "raw_rows": 36497,
+  "filtered_rows_before_dedup": 2361,
+  "selected_rows": 2359,
+  "duplicates_removed": 2,
+  "category_mapping": {
+    "mmlu-elementary-mathematics": "math",
+    "mbpp": "coding",
+    "winogrande": "commonsense",
+    "mmlu-formal-logic": "reasoning",
+    "mmlu-logical-fallacies": "reasoning"
+  },
+  "models": [
+    "gpt-3.5-turbo-1106",
+    "gpt-4-1106-preview",
+    "mistralai/mixtral-8x7b-chat"
+  ],
+  "note": "M3 categories and model pool retained. M3 does not specify benchmark-to-category mapping; M4 operationalizes reasoning using MMLU formal logic and logical fallacies. Mapping fixed by task meaning, not observed model performance. Historical scores/costs; no API calls. No claim of reproduction of unavailable teammate code.",
+  "benchmark_counts": {
+    "winogrande": 1267,
+    "mbpp": 425,
+    "mmlu-elementary-mathematics": 378,
+    "mmlu-logical-fallacies": 163,
+    "mmlu-formal-logic": 126
+  },
+  "selected_csv_sha256": "712705241048d1010f77b8aec48cb92387210c85d5d2d6ae398e8cbfaf9b35b3",
+  "retrieved_on": "2026-11-02",
+  "dataset_page": "https://huggingface.co/datasets/withmartian/routerbench",
+  "dataset_doi": "10.57967/hf/1996",
+  "paper": "https://arxiv.org/abs/2403.12031",
+  "publisher": "Martian / withmartian",
+  "reference_file": "REFERENCES.txt"
+}
